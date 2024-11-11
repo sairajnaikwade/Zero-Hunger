@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inknut Antiqua", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.whole#blurr.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  /* padding: 20px; */
+  background-color:#f5d8b5;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  border-radius: 20px;
+  transition: 0.3s ease; /* Use transition here */
+}
+#popup.active {
+  top: 55%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s ease; /* Use transition here */
+}
+#popup .cbutton{
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  padding: 5px 70px;
+  background-color: #ff8d02;
+  border-radius: 20px;
+  font-family: 'Inknut Antiqua', serif;
+  /* margin-left: -105px; */
+  /* margin-top: 20px; */
+  border: none;
+  font-size: larger;
+}
+
+.QR img{
+  width: 300px;
+  height: 300px;
+ 
+}
+
+.QR{
+  background-color: #000;
+  padding: 5px;
+  width: 315px;
+  height: 315px;
+  border-radius: 20px;
+}
+
+#popup h3{
+  background-color: #ff9800;
+  color: white;
+  padding: 5px 10px;
+  margin: 0px 0px 30px 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.main-content h2 {
+  background-color: #ff9800;
+  color: white;
+  padding: 5px 10px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-right: 55%;
+}
+
+.donation-section {
+  background-color: #ffe0b2;
+  padding: 20px;
+  border-radius: 10px;
+  /* display: inline-block; */
+  margin: 20px 20% 20px 20%;
+  display: flex;
+  flex-direction: column;
+}
+.donation-section h3 {
+  margin: 0;
+  padding: 0;
+  background-color: #ff9800;
+  border-radius: 10px;
+  margin: 0px 20% 0px 20%;
+}
+.donation-section img {
+  border-radius: 10px;
+  margin: 20px 0px 0px 27%;
+}
+.donation-section p {
+  margin: 0;
+  padding: 0;
+}
+.donation-section button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 25px 20% 0px 20%;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Inknut Antiqua", serif;
+  transition: transform 0.3s ease;
+}
+.donation-section button:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #f8bbd0;
+  color: #000;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 20px;
+}
